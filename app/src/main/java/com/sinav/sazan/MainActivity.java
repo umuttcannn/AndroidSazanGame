@@ -23,7 +23,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        mainPlayButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PlayActivity.class);
+                startActivity(intent);
+            }
+        });
+        mainAboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,AboutAcitivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
