@@ -1,38 +1,42 @@
 package com.sinav.sazan;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PlayActivity extends AppCompatActivity {
-    ListView listView;
-    ArrayList<Card> List = new ArrayList<>();
+
+    Button playcard1Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        listView = findViewById(R.id.listView);
-        List<String> cards = new ArrayList<String>();
-        cards.add("galleria");
-        cards.add("mies");
-        cards.add("Bilkent");
-        cards.add("ankuva");
-        List<String> cards2 = new ArrayList<String>();
-        cards2.add("asdasd");
-        cards2.add("asd");
-        cards2.add("fasfadsas");
-        cards2.add("fasdasd");
-        Card card1 = new Card("first card",cards);
-        Card card2 = new Card("SecondCard",cards2);
-        List.add(card1);
-        List.add(card2);
+        tanimla();
 
-        CardAdapter cardAdapter = new CardAdapter(this,R.layout.adapter_card,List);
-        listView.setAdapter(cardAdapter);
+        playcard1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PlayActivity.this,SelectionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void tanimla() {
+        playcard1Button = findViewById(R.id.playCard1Button);
     }
 }

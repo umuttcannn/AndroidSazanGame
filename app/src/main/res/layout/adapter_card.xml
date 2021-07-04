@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
     android:layout_marginTop="30dp"
-    android:layout_marginRight="80dp"
-    android:layout_marginLeft="80dp"
-    android:background="@drawable/layout_bg"
-    android:orientation="vertical"
-    android:layout_height="wrap_content"
+    android:layout_marginLeft="140dp"
+    android:layout_height="100dp">
 
-
-    android:gravity="center_horizontal">
-
-
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:textColor="@color/black"
-        android:id="@+id/adapterTextView"/>
-    <TextView
-        android:textColor="@color/black"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/adapterTextView2"/>
+        android:orientation="vertical"
+        android:background="@drawable/layout_bg"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:id="@+id/adapterTextView"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adapterTextView2"/>
+
+    </LinearLayout>
 
 
 
 
-
-</LinearLayout>
+</RelativeLayout>

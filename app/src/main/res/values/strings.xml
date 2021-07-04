@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="card1">
+        <item>"ARCADİUM"</item>
+        <item>"GALLERİA"</item>
+        <item>"CEPA"</item>
+        <item>"KENTPARK"</item>
+        <item>"PANORA"</item>
+        <item>"TAURUS"</item>
+        <item>"IKEA"</item>
+        <item>"GORDİON"</item>
+    </string-array>
 </resources>

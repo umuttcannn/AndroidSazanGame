@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/maincolor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".SelectionActivity">
+    <TextView
+        android:layout_marginTop="85dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUMBER OF PLAYER"
+        android:textSize="30sp"
+        android:fontFamily="@font/aclonica"/>
+
+    <Spinner
+        android:id="@+id/spinnerNumberofPlayer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUMBER OF SAZAN"
+        android:textSize="30sp"
+        android:fontFamily="@font/aclonica"/>
+
+    <Spinner
+        android:id="@+id/spinnerNumberofSpy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_marginTop="260dp"
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aclonica"/>
+
+</LinearLayout>
