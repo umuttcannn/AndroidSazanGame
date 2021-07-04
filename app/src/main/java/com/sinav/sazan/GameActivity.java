@@ -46,8 +46,8 @@ public class GameActivity extends AppCompatActivity {
         int b=r.nextInt(numberofPlayer);// 10 dahil değil
 
         //butonu kapatma
-        gameButton.setAlpha(0);
-
+        gameButton.setAlpha(1);
+        gameButton.setText("TAP TO START");
 
         gameButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +58,7 @@ public class GameActivity extends AppCompatActivity {
                     {
 
                         if(arrayList.contains(i)){
-                            gameButton.setText("You Are Sazan");
+                            gameButton.setText("YOU ARE CARP");
                         }
                         else{
                             gameButton.setText(cards[c]);
@@ -70,7 +70,7 @@ public class GameActivity extends AppCompatActivity {
                     }
                     else{
                         v.setAlpha(1);
-                        gameButton.setText("Sazan avı başlasın");
+                        gameButton.setText("LET THE CARP HUNT BEGİN");
                     }
 
                 }

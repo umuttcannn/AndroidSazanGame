@@ -11,6 +11,9 @@
         android:id="@+id/gameButton"
         android:layout_width="380dp"
         android:layout_height="710dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aclonica"
         android:background="@drawable/layout_bg"
         />
 
