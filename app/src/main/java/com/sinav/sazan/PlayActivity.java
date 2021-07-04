@@ -31,6 +31,7 @@ public class PlayActivity extends AppCompatActivity {
         Card card2 = new Card("SecondCard",cards2);
         List.add(card1);
         List.add(card2);
+
         CardAdapter cardAdapter = new CardAdapter(this,R.layout.adapter_card,List);
         listView.setAdapter(cardAdapter);
     }
