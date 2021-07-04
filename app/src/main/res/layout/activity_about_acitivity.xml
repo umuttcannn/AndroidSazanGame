@@ -79,5 +79,7 @@
         android:text="BACK"
         android:fontFamily="@font/aclonica"
         android:layout_marginTop="32dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:id="@+id/aboutToMain"
+        />
 </LinearLayout>
