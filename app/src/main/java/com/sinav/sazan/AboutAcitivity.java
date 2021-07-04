@@ -13,7 +13,7 @@ public class AboutAcitivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_acitivity);
-
+        aboutToMain = findViewById(R.id.aboutToMain);
         aboutToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
