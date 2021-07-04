@@ -11,8 +11,7 @@ import java.util.List;
 
 public class PlayActivity extends AppCompatActivity {
     ListView listView;
-    ArrayList<Card> List = new ArrayList<Card>();
-    ArrayAdapter arrayAdapter;
+    ArrayList<Card> List = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
